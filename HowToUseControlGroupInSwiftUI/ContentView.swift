@@ -9,13 +9,38 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        Menu("My menu") {
+            ControlGroup("One") {
+                Button("One") {
+                    
+                }
+                Button("Two") {
+                    
+                }
+                Menu("Nested menu") {
+                    Button("One") {
+                        
+                    }
+                    Button("Two") {
+                        
+                    }
+                    Button("Three") {
+                        
+                    }
+                }
+            }
+            Menu("Nested menu") {
+                Button("One") {
+                    
+                }
+                Button("Two") {
+                    
+                }
+                Button("Three") {
+                    
+                }
+            }
         }
-        .padding()
     }
 }
 
